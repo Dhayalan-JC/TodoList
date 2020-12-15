@@ -1,6 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="todos">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
 
 <script>
@@ -10,6 +12,24 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+   data (){
+    return{
+      todos:[
+          {
+            id:1,
+            title:"Amritsar"
+          },
+          {
+            id:2,
+            title:"Bombay"
+          },
+          {
+            id:3,
+            title:"Chennai"
+          }
+        ]
+    }
   }
 }
 </script>
