@@ -18,25 +18,7 @@ import TodoItem from './TodoItem'
     components: {
       TodoInput,
       TodoItem
-    },
-    data (){
-        return{
-          todos:[
-              {
-                id:1,
-                title:"Amritsar"
-              },
-              {
-                id:2,
-                title:"Bombay"
-              },
-              {
-                id:3,
-                title:"Chennai"
-              }
-            ]
-        }
-    }
+    }    
   }
 </script>
 
