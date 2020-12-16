@@ -16,7 +16,38 @@ export default {
 </script>
 
 <style>
+body{
+  width:100%;
+  height:100%;
+  /* background-color:#018786; */
+  background-color:#03dAC6 !important;
+  position:relative;
+  overflow:hidden;
+}
+body:after{
+  content: "TO Do App";
+    position: absolute;
+    right: 0;
+    background-color: gold;
+      width: 60%;
+    height: 80%;
+    z-index: -1;
+    /* transform: rotate(45deg); */
+    border-radius: 100%;
+    transition: 0.5s ease;
+    margin: 0 auto;
+    left: 0;
+    text-align: c;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+   animation: mymove 2s forwards;
 
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,5 +56,23 @@ export default {
   color: #2c3e50;
   margin:0;
   padding:1.5rem;
+      height: 100vh;
 }
+@keyframes mymove{
+  from{
+    bottom: -100%;
+  }
+  to{
+    bottom: -50%;
+  }
+}
+@keyframes scale{
+  from{
+    transform:scale(0.7);
+  }
+  to{
+     transform:scale(1);
+  }
+}
+
 </style>

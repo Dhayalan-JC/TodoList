@@ -1,10 +1,10 @@
 <template>
-    <div class="row">
+    <div class="row input">
         <!-- <input v-model="todoText" class="form-control col mx-3"  type="text" /> -->
         <input 
         @change="todoTextchange"
         v-bind:value="todoText" 
-        class="form-control col mx-3"  
+        class="form-control col mr-4"  
         type="text" />
         <button @click="addTodoI" class="btn btn-primary">ADD</button>
     </div>
@@ -34,6 +34,8 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-
+<style scoped>
+.input{
+       animation: scale .5s forwards;
+}
 </style>

@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <div v-for="todo in  allTodos" :key="todo.id">
+        <div v-for="todo in  allTodos" :key="todo.id" class="row pt-4 pl-1 pr-1 d-flex justify-content-between">
             <TodoItem :todo='todo' />
         </div>
-    </div>
 </template>
 
 <script>
@@ -20,6 +18,6 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style scoped>
 
 </style>

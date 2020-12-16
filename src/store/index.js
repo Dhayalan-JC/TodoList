@@ -51,15 +51,12 @@ export default new createStore({
       {
         id:2,
         title:"Two"
-      },
-      {
-        id:3,
-        title:"Three"
       }
     ],
   },
   getters:{
     allTodos:(state)=> state.todos,
+    
   },
   actions: {
     addTodo({ commit }, todo){
