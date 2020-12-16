@@ -1,5 +1,5 @@
 {
-  "name": "todo",
+  "name": "todolist",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "aos-animations": "0.0.7",
+    "bootstrap": "^4.5.3",
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
   },
