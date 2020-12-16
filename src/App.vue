@@ -75,4 +75,12 @@ body:after{
   }
 }
 
+@media only screen and (max-width: 800px) {
+  body:after {
+      width: 100%;
+      padding-top: 3rem;
+      font-size: 3rem;
+      height: 70%;
+  }
+}
 </style>
