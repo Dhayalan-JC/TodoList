@@ -11,7 +11,8 @@
     "aos-animations": "0.0.7",
     "bootstrap": "^4.5.3",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0",
+    "uuid": "^8.3.2",
+    "vue": "^3.0.4",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {

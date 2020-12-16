@@ -1,15 +1,13 @@
 <template>
   <div class="col-xl-12">
-      <TodoInput  data-aos="fade-up"/>
-      <TodoItem  data-aos="fade-up"/>
-      <TodoItem  data-aos="fade-up"/>
-      <TodoItem  data-aos="fade-up"/>
+      <TodoInput />
+      <TodoList />
   </div>
 </template>
 
 <script>
 import TodoInput from './TodoInput'
-import TodoItem from './TodoItem'
+import TodoList from './TodoList'
   export default {
     name: 'TodoApp',
     props: {
@@ -17,7 +15,7 @@ import TodoItem from './TodoItem'
     },
     components: {
       TodoInput,
-      TodoItem
+      TodoList
     }    
   }
 </script>
