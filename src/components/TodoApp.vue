@@ -1,15 +1,23 @@
 <template>
   <div class="col-xl-12">
-   
-   
+      <TodoInput  data-aos="fade-up"/>
+      <TodoItem  data-aos="fade-up"/>
+      <TodoItem  data-aos="fade-up"/>
+      <TodoItem  data-aos="fade-up"/>
   </div>
 </template>
 
 <script>
+import TodoInput from './TodoInput'
+import TodoItem from './TodoItem'
   export default {
     name: 'TodoApp',
     props: {
       msg: String
+    },
+    components: {
+      TodoInput,
+      TodoItem
     },
     data (){
         return{

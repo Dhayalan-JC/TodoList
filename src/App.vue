@@ -1,6 +1,6 @@
 <template>
-  <div id="App" class="container-fluid">
-    <TodoApp  data-aos="fade-up" msg="Welcome to Your Vue.js ToDo App"/>
+  <div id="App" class="container">
+    <TodoApp  data-aos="fade-up" msg="My First ToDo App with VUE Js"/>
   </div>
 </template>
 
@@ -23,5 +23,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin:0;
+  padding:1.5rem;
 }
 </style>
