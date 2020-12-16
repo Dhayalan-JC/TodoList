@@ -65,9 +65,12 @@ export default new createStore({
     addTodo({ commit }, todo){
       commit("add_todo", todo);
     },
-    del_todo({ commit }, id){
+    deltodo({ commit }, id){
       commit("del_todo", id);
-    }
+    },
+    updatetodo({ commit }, todo){
+      commit("update_todo", todo);
+    },
   },
   mutations: {
     add_todo(state, todo){
@@ -76,8 +79,11 @@ export default new createStore({
     },
     del_todo(state, id){
       state.todos = state.todos.filter((todo) => todo.id  != id);
-     
-    }   
+    },  
+    update_todo(state, todo){
+     let index = state.todos.findIndex((t) => t.id == todo.id)
+     console.log(index);
+    }, 
   },
   modules: {
   }
